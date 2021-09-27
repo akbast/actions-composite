@@ -13,8 +13,8 @@ runs:
     - id: actions-say-hello
       uses: akbast/actions-say-hello@v1
       with:
-        who-to-greet: ${{ env.person }}
+        who-to-greet: ${{ inputs.person }}
     - id: actions-say-goodbye
       uses: akbast/actions-say-goodbye@v1
       with:
-        who-to-say-goodbye: ${{ env.person }}
+        who-to-say-goodbye: ${{ inputs.person }}
